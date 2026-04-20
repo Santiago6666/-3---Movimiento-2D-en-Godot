@@ -220,7 +220,10 @@ _data = {
 [sub_resource type="QuadMesh" id="QuadMesh_kdubu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d21ai"]
-size = Vector2(68, 6)
+size = Vector2(221, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(114, 6)
 
 [node name="Node2D" type="Node2D" unique_id=835788572]
 
@@ -244,10 +247,21 @@ libraries/ = SubResource("AnimationLibrary_0h7mo")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=829244538]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=631716390]
-position = Vector2(3.8146973e-06, 14.999999)
-scale = Vector2(66.5, 5.5)
+position = Vector2(-0.9999955, 14.999999)
+scale = Vector2(223.99998, 5.5)
 mesh = SubResource("QuadMesh_kdubu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=312386581]
-position = Vector2(0, 15)
+position = Vector2(-0.5, 15)
 shape = SubResource("RectangleShape2D_d21ai")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1984226669]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D2" unique_id=2005725884]
+position = Vector2(-56.999996, -22)
+scale = Vector2(115.99999, 5.5)
+mesh = SubResource("QuadMesh_kdubu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=666542048]
+position = Vector2(-57, -22)
+shape = SubResource("RectangleShape2D_q6r6c")
